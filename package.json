@@ -1,4 +1,5 @@
 {
+  "homepage": "https://raymond-cox.github.io/random-quote-gen",
   "name": "random-quote-gen",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +16,5 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "homepage": "http://Raymond-Cox.github.io/random-quote-gen"
+  }
 }

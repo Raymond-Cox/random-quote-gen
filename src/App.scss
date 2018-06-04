@@ -1,12 +1,29 @@
 $off-black: rgb(14, 17, 17);
 
 body {
-  background: url(https://images.unsplash.com/photo-1438110823366-38e8409b4afe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07fc8200bd522b0e96ad9b21a2ed25b9&auto=format&fit=crop&w=1950&q=80) no-repeat fixed center center;
+  background: url(https://images.unsplash.com/photo-1438110823366-38e8409b4afe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07fc8200bd522b0e96ad9b21a2ed25b9&auto=format&fit=crop&w=1950&q=80) no-repeat  center center fixed;
   padding: 1em;
-
-  @media screen and (min-width: 2560px) {
-    background-size: cover;
-  }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+////////////////////////////
+// iOS fix for background //
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(https://images.unsplash.com/photo-1438110823366-38e8409b4afe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07fc8200bd522b0e96ad9b21a2ed25b9&auto=format&fit=crop&w=1950&q=80) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .header {
